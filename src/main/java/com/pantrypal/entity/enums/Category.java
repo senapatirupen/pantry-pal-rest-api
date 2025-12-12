@@ -5,5 +5,9 @@ public enum Category {
     HOUSEHOLD,
     MEDICINE,
     PERSONAL_CARE,
-    OTHER
+    OTHER,
+    VEGETABLES,
+    FRUITS,
+    CLOTHING,
+    STATIONERY
 }

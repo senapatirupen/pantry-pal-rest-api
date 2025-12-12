@@ -12,9 +12,9 @@ public class InventoryItemRequest {
     private String name;
 
     @NotBlank(message = "Category is required")
-    @Pattern(regexp = "^(groceries|household|medicine|personal_care|other)$",
+    @Pattern(regexp = "^(groceries|household|medicine|personal_care|other|vegetables|fruits|clothing|stationery)$",
             flags = Pattern.Flag.CASE_INSENSITIVE,
-            message = "Category must be one of: groceries, household, medicine, personal_care, other")
+            message = "Category must be one of: groceries, household, medicine, personal_care, other, vegetables, fruits, clothing, stationery")
     private String category;
 
     @NotBlank(message = "Status is required")
@@ -36,6 +36,6 @@ public class InventoryItemRequest {
     @Size(max = 500, message = "Note cannot exceed 500 characters")
     private String note;
 
-    @FutureOrPresent(message = "Need by date must be present or future")
+//    @FutureOrPresent(message = "Need by date must be present or future")
     private LocalDate needBy;
 }

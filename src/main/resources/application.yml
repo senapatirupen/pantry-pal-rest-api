@@ -28,7 +28,7 @@ app:
     expiration: 86400000 # 24 hours
     refresh-expiration: 604800000 # 7 days
   cors:
-    allowed-origins: http://localhost:5001,http://localhost:5173,http://localhost:3000
+    allowed-origins: https://financetbag.com,https://www.financetbag.com,http://localhost:5001,http://localhost:5173,http://localhost:3000
   frontend:
     url: http://localhost:5173
   email:
